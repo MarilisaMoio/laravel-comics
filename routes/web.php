@@ -28,3 +28,15 @@ Route::get('/comics', function () {
 
     return view('comics', $data);
 });
+
+Route::get('/', function () {
+    $footerNav = config('footerNav');
+
+    $data = [
+        'nav' => ["characters", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"],
+        'socialIcons' => ["facebook.png", "periscope.png", "pinterest.png", "twitter.png", "youtube.png"],
+        'footerNav' => $footerNav
+    ];
+
+    return view('landing', $data);
+});

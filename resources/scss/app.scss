@@ -233,3 +233,23 @@ section.contacts{
 }
 
 /* #endregion FOOTER */
+
+/* #region LANDING */
+    section.landing{
+        .container{
+            padding: 20px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            div{
+                max-width: 60%;
+            }
+        }
+        color: $primary_color;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+/* #endregion LANDING */

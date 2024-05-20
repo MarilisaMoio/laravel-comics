@@ -4,7 +4,7 @@
         <nav>
             <ul>
                 @foreach ($nav as $singleNav)
-                    <li><a href="#">{{ $singleNav }}</a></li>
+                    <li><a href="/comics">{{ $singleNav }}</a></li>
                 @endforeach
             </ul>
         </nav>

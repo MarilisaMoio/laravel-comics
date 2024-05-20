@@ -23,4 +23,14 @@ Comics
             <button type="button">load more</button>
         </div>
     </section>
+    <section class="icons">
+        <div class="container">
+            @foreach ($icons as $icon)
+                <div class="icon-card">
+                    <img src="{{ Vite::asset('resources/img/buy-' . $icon['src']) }}" alt="{{ $icon['text'] }}">
+                    <span class="icon-text">{{ $icon['text'] }}</span>
+                </div>
+            @endforeach
+        </div>
+    </section>
 @endsection

@@ -15,10 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/comics', function () {
     $comics = config('comics');
+    $icons = config('icons');
 
     $data = [
         'comics' => $comics,
-        'nav' => ["characters", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"]
+        'nav' => ["characters", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"],
+        'icons' => $icons,
     ];
 
     return view('comics', $data);

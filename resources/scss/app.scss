@@ -133,3 +133,35 @@ section.comics{
 }
 
 /* #endregion COMICS */
+
+/* #region ICONS */
+
+section.icons{
+    background-color: $primary_color;
+    color: white;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: $small_sect_h;
+    }
+
+    .icon-card{
+        height: 30%;
+        display: flex;
+        align-items: center;
+        img{
+            height: 100%;
+        }
+        &:last-child > img{
+            height: 75%;
+        }
+        span{
+            text-transform: uppercase;
+            margin-left: 6px;
+        }
+    }
+}
+
+/* #endregion ICONS */

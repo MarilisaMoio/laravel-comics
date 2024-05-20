@@ -65,3 +65,71 @@ header{
     }
 }
 /* #endregion HEADER */
+
+/* #region HERO */
+
+section.hero{
+    height: 300px;
+    background-image: url('../img/jumbotron.jpg');
+    background-position: center top;
+    background-size: cover;
+    .container{
+        height: 100%;
+        position: relative;
+        div{
+            background-color: $primary_color;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            color: white;
+            font-weight: 600;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translateY(50%);
+        }
+    }
+}
+
+/* #endregion HERO */
+
+/* #region COMICS */
+
+section.comics{
+    background-color: $secondary_dark;
+    color: white;
+    .container{
+        padding: 20px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    button{
+        background-color: $primary_color;
+        text-transform: uppercase;
+        padding: 10px 40px;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 10px auto;
+    }
+    .card{
+        width: calc(100% / 6 - 8px);
+        margin: 12px 0;
+        .img-wrapper {
+            width: 100%;
+            aspect-ratio: 1;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        .title{
+            margin-top: 16px;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+    }
+}
+
+/* #endregion COMICS */

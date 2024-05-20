@@ -16,11 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/comics', function () {
     $comics = config('comics');
     $icons = config('icons');
+    $footerNav = config('footerNav');
 
     $data = [
         'comics' => $comics,
         'nav' => ["characters", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"],
         'icons' => $icons,
+        'footerNav' => $footerNav
     ];
 
     return view('comics', $data);

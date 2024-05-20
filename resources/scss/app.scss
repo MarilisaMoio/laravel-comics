@@ -166,7 +166,7 @@ section.icons{
 
 /* #endregion ICONS */
 
-/* #region FOOTEr */
+/* #region FOOTER */
 section.footer-nav{
     background: url(../img/footer-bg.jpg) no-repeat center;
     background-size: cover;
@@ -200,4 +200,36 @@ section.footer-nav{
     }
 }
 
-/* #endregion FOOTEr */
+section.contacts{
+    background-color: $secondary_dark;
+    color: white;
+    height: $small_sect_h;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    button{
+        background-color: transparent;
+        border: 2px solid $primary_color;
+        padding: 10px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .social{
+        display: flex;
+        align-items: center;
+        * + * {
+            margin-left: 15px;
+        }
+        span{
+            color: $primary_color;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* #endregion FOOTER */

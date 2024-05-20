@@ -22,7 +22,8 @@ Route::get('/comics', function () {
         'comics' => $comics,
         'nav' => ["characters", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"],
         'icons' => $icons,
-        'footerNav' => $footerNav
+        'footerNav' => $footerNav,
+        'socialIcons' => ["facebook.png", "periscope.png", "pinterest.png", "twitter.png", "youtube.png"]
     ];
 
     return view('comics', $data);

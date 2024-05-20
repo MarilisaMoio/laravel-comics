@@ -1,9 +1,11 @@
 <header>
     <div class="container">
-        <img src="../assets/img/dc-logo.png" alt="">
+        <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
         <nav>
             <ul>
-                <li>ciao</li>
+                @foreach ($nav as $singleNav)
+                    <li><a href="#">{{ $singleNav }}</a></li>
+                @endforeach
             </ul>
         </nav>
     </div>
